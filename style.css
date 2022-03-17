@@ -25,7 +25,7 @@ body {
   list-style: none;
   justify-content: center;
   column-gap: 20px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .intro {
@@ -54,4 +54,9 @@ body {
 
 .job {
   color: #36b37f;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
