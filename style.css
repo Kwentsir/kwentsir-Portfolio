@@ -1,0 +1,36 @@
+.background_image {
+  background-image: url("/images/header-illsutration-mobile@2x.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-header > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+.social-handle-icons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.intro {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.job {
+  color: green;
+}
