@@ -1,13 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name : Joseph Kwesi Kwentsir Portfolio
 
 > Description the project.
-
+This is my portofolio. 
 
 ## Built With
 
 - Major languages
+   HTML and CSS
 - Frameworks
 - Technologies used
 
@@ -38,19 +39,14 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors
+## Authors: Joseph Kwesi Kwentsir
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/kwentsir)
+- Twitter: [@twitterhandle](https://twitter.com/jkwentsir)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/josephkwentsir)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
