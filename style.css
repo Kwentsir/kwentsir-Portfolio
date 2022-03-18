@@ -149,6 +149,24 @@ margin-bottom: 24px;
   display: grid;
 }
 
+.profile-me {
+  color: #172b4d;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 16px;
+}
+
+.profile-intro {
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding: 5px;
+}
+
 .recent-work {
   display: grid;
 }
@@ -168,4 +186,65 @@ article > img {
   height: 250px;
   width: 100%;
   object-fit: cover;
+}
+
+.get-resume {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  width: 159px;
+  margin-bottom: 59px;
+  }
+
+.languages {
+  background-image:  url("/images/Imgplaholder.svg");
+  background-repeat: no-repeat;
+  height: 352px;
+  width: 327px;
+  margin: 24px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.my-languages{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  list-style: none;
+  justify-content: center;
+  column-gap: 8px;
+  margin-top: 30px;
+  padding: 11px;
+}
+
+.my-languages > li {
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.03em;
+color: #36b37e;
+}
+
+.languages > h2 {
+  display: flex;
+ align-self: center;
+ justify-content: center;
+}
+
+.languages > img {
+display: flex;
+text-decoration: none;
+align-items: center;
+list-style: none;
+justify-content: center;
 }
