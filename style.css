@@ -63,11 +63,12 @@ a {
 }
 
 .job {
+  display: block;
   color: #36b37f;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-bottom: 20px;
 }
 
@@ -179,7 +180,7 @@ hr {
   display: grid;
 }
 
-article {
+.article-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +193,7 @@ article {
   margin-bottom: 24px;
 }
 
-article > img {
+.article-card > img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -211,6 +212,7 @@ article > img {
   line-height: 20px;
   width: 170px;
   margin-top: 24px;
+  z-index: 10;
 }
 
 .languages {
@@ -263,6 +265,7 @@ article > img {
   border-radius: 100%;
   margin-top: 40px;
   margin-bottom: 64px;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .aboutup {
@@ -277,6 +280,14 @@ article > img {
   bottom: 2px;
 }
 
+button {
+  cursor: pointer;
+}
+
 button:hover {
-  color: indigo;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background-color: #008552;
 }
