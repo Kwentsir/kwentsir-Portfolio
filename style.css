@@ -26,7 +26,7 @@ a {
 }
 
 .page-headline {
-  background-image: url("/images/header-illsutration-mobile@2x.svg");
+  background-image: url("./images/header-illsutration-mobile@2x.svg");
   background-size: cover;
 }
 
