@@ -205,12 +205,12 @@ article > img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  padding: 12px;
+  padding: 20px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
-  margin-bottom: 59px;
-  margin-top: 30px;
+  line-height: 20px;
+  width: 170px;
+  margin-top: 24px;
 }
 
 .languages {
@@ -274,5 +274,9 @@ article > img {
 .aboutdown {
   position: absolute;
   left: 0;
-  bottom: 45px;
+  bottom: 2px;
+}
+
+button:hover {
+  color: indigo;
 }
