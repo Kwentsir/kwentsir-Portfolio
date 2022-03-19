@@ -2,8 +2,7 @@
 
 # Project Name : Joseph Kwesi Kwentsir Portfolio
 
-> Description the project.
-This is my portofolio. 
+>This is the mobile skeleton of my portfolio. 
 
 ## Built With
 
@@ -12,30 +11,17 @@ This is my portofolio.
 - Frameworks
 - Technologies used
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- Copy this link `https://github.com/Kwentsir/Kwentsir-Portfolio`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone https://github.com/Kwentsir/Kwentsir-Portfolio.git`.
+- Go to the repository folder in your command prompt `cd Kwentsir-Portfolio`.
+- Run `npm install` to install the dev dependencies for linters.
 
 
 
@@ -58,11 +44,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
