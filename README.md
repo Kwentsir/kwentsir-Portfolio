@@ -25,13 +25,21 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors: Joseph Kwesi Kwentsir
+## Authors 
 
 👤 **Author1**
+Joseph Kwesi Kwentsir
 
 - GitHub: [@githubhandle](https://github.com/kwentsir)
 - Twitter: [@twitterhandle](https://twitter.com/jkwentsir)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/josephkwentsir)
+
+👤 **Author2**
+NOUREDDINE MEZIANY
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 
 ## 🤝 Contributing
