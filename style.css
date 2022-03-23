@@ -201,6 +201,7 @@ hr {
 
 .get-resume {
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   background-color: #36b37f;
   border: none;
@@ -215,6 +216,12 @@ hr {
   z-index: 10;
 }
 
+.resume-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .languages {
   display: flex;
   align-items: center;
@@ -224,8 +231,8 @@ hr {
   border-radius: 8px;
   max-width: 300px;
   padding: 16px;
-  margin: 24px;
   list-style: none;
+  margin: 24px 0;
 }
 
 .my-languages {
@@ -290,4 +297,72 @@ button:hover {
 
 button:active {
   background-color: #008552;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+  margin: 0 24px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  border: 1px solid #D0D9D4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin: 12px 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6B778C;
+}
+
+.areatext {
+  border: 1px solid #60C095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091E42;
+  margin: 12px 24px;
+  padding: 12px;
+  height: 90px;
+}
+
+footer button {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.email {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+  margin: 20px 0 200px;
+}
+
+.bottom-hr {
+  border: 2px solid;
+  background-color: #0D151E;
+  width: 134px;
+  border-radius: 10px;
+  margin-bottom: 8px;
 }
