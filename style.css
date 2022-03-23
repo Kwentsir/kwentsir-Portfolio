@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .nav-header > ul {
@@ -365,4 +366,11 @@ footer button {
   width: 134px;
   border-radius: 10px;
   margin-bottom: 8px;
+}
+
+#contact-img {
+	margin: 650px auto;
+  position: absolute;
+  left: 85%;
+
 }
