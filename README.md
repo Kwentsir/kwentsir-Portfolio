@@ -2,7 +2,15 @@
 
 # Project Name : Joseph Kwesi Kwentsir Portfolio
 
->This is the mobile skeleton of my portfolio. 
+>This is the mobile skeleton of my portfolio.
+
+![Menu Page](./Screenshots/menupage.png)
+![Profile Page](./Screenshots/profilepage1.png)
+![Profile Page](./Screenshots/profilepage2.png)
+![Profile Page](./Screenshots/profilepage3.png)
+![Profile Page](./Screenshots/profilepage4.png)
+![Profile Page](./Screenshots/profilepage5.png)
+![Contact Page](./Screenshots/contactpage.png)
 
 ## Built With
 
@@ -25,13 +33,21 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-## Authors: Joseph Kwesi Kwentsir
+## Authors 
 
 👤 **Author1**
+Joseph Kwesi Kwentsir
 
 - GitHub: [@githubhandle](https://github.com/kwentsir)
 - Twitter: [@twitterhandle](https://twitter.com/jkwentsir)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/josephkwentsir)
+
+👤 **Author2**
+NOUREDDINE MEZIANY
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 
 ## 🤝 Contributing

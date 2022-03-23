@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .nav-header > ul {
@@ -201,6 +202,7 @@ hr {
 
 .get-resume {
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   background-color: #36b37f;
   border: none;
@@ -215,6 +217,12 @@ hr {
   z-index: 10;
 }
 
+.resume-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .languages {
   display: flex;
   align-items: center;
@@ -224,8 +232,8 @@ hr {
   border-radius: 8px;
   max-width: 300px;
   padding: 16px;
-  margin: 24px;
   list-style: none;
+  margin: 24px 0;
 }
 
 .my-languages {
@@ -284,10 +292,83 @@ button {
   cursor: pointer;
 }
 
+footer button {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
 button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
   background-color: #008552;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 0 24px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin: 12px 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.areatext {
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+  margin: 12px 24px;
+  padding: 12px;
+  height: 90px;
+}
+
+.email {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 20px 0 200px;
+}
+
+.bottom-hr {
+  border: 2px solid;
+  background-color: #0d151e;
+  width: 134px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+#contact-img {
+  margin: 650px auto;
+  position: absolute;
+  left: 85%;
 }
