@@ -151,9 +151,9 @@
   <footer>
      <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
      <form action="https://formspree.io/f/mayvbgnj" method="POST" class="contact-form">
-        <input type="text" placeholder="Full Name" class="text" maxlength="30" required>
-        <input type="email" class="text" placeholder="Email address" pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
-        <textarea class="areatext" maxlength="500" required>Enter text here</textarea>
+        <input type="text" name="text" placeholder="Full Name" class="text" maxlength="30" required>
+        <input type="email" name="email" class="text" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <textarea class="areatext" maxlength="500" placeholder="Enter text here" required></textarea>
         <button type="submit" class="get-resume">Get In Touch</button>
      </form>
      <ul class="social-handle-icons">
