@@ -2,7 +2,15 @@
 
 # Project Name : Joseph Kwesi Kwentsir Portfolio
 
->This is the mobile skeleton of my portfolio. 
+>This is the mobile skeleton of my portfolio.
+
+![Menu Page](./Screenshots/menupage.png)
+![Profile Page](./Screenshots/profilepage1.png)
+![Profile Page](./Screenshots/profilepage2.png)
+![Profile Page](./Screenshots/profilepage3.png)
+![Profile Page](./Screenshots/profilepage4.png)
+![Profile Page](./Screenshots/profilepage5.png)
+![Contact Page](./Screenshots/contactpage.png)
 
 ## Built With
 
