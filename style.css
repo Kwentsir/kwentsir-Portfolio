@@ -1,14 +1,19 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-.nav-header > ul {
+.mobile {
   display: flex;
   list-style: none;
   justify-content: space-between;
   padding: 25px;
+}
+
+.desktop {
+  display: none;
 }
 
 .welcome {
@@ -371,4 +376,58 @@ footer p {
   margin: 650px auto;
   position: absolute;
   left: 85%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .page-header {
+    background-image: url("./images/desktop-header.svg");
+    background-size: cover;
+    width: 100%;
+    z-index: -2;
+    
+  }
+
+  .desktop  {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin: 24px;
+  }
+  
+  .mobile {
+    display: none;
+  }
+
+  .intro-work {
+    color: #172b4d;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    justify-self: center;    
+    padding: 5px;
+  }
+
+  .recent-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .profile-intro {
+    align-self: center;
+    margin-left: 260.5px;
+    margin-right: 259.5px;
+  }
+  
+  .resume-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: fff;
+    border-radius: 8px;
+    padding: 16px;
+    list-style: none;
+    gap: 24px;
+  }
+  
 }
