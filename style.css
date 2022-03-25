@@ -423,8 +423,19 @@ footer p {
     column-gap: 1.5rem;
     padding: 24px;
     list-style: none;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
   }
-  
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
+
   .desktop-menu {
     text-decoration: none;
     font-weight: 600;
@@ -518,4 +529,5 @@ footer p {
     flex-grow: 1;
     max-width: 100%;
   }
+
 }
