@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 .mobile {
@@ -162,6 +161,8 @@ hr {
   align-items: center;
   position: relative;
   padding-top: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .profile-me {
@@ -226,6 +227,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .languages {
@@ -313,6 +316,8 @@ button:active {
 footer {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer p {
@@ -328,6 +333,11 @@ footer p {
 .contact-form {
   display: flex;
   flex-direction: column;
+}
+
+.form-footer {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .text {
@@ -379,21 +389,51 @@ footer p {
 }
 
 @media only screen and (min-width: 1080px) {
-  .page-header {
+  .background-image {
     background-image: url("./images/desktop-header.svg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    max-height: 80rem;
     width: 100%;
-    z-index: -2;
-    
+    z-index: -1;
+  }
+
+ .page-headline {
+ background-image: none;
+  }
+
+  .intro-work {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .front-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    max-height: 80rem;
   }
 
   .desktop  {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
-    margin: 24px;
+    padding: 24px;
+    list-style: none;
   }
   
+  .desktop-menu {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+
+
+  }
   .mobile {
     display: none;
   }
@@ -408,9 +448,17 @@ footer p {
     padding: 5px;
   }
 
-  .recent-work {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    column-gap: 24px;
+    max-width: 1200px;
+  }
+
+  .recent-work > hr {
+    display: none;
   }
 
   .profile-intro {
@@ -418,7 +466,12 @@ footer p {
     margin-left: 260.5px;
     margin-right: 259.5px;
   }
-  
+
+  .article-card {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
   .resume-items {
     display: flex;
     justify-content: center;
@@ -430,4 +483,39 @@ footer p {
     gap: 24px;
   }
   
+  .form-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-paragraph {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    flex-basis: 45%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  #get-in-touch {
+    align-self: flex-start;
+    margin-left: 24px;
+  }
+  .intro {
+    padding-bottom: 0; 
+  }
+
+  .contact-form > input, .contact-form > textarea{
+ 
+  }
+
+  .form-container {
+    flex-grow: 1;
+    max-width: 100%;
+  }
 }
