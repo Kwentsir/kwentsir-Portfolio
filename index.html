@@ -11,15 +11,23 @@
     <title>Joseph Kwesi Kwentsir Portfolio</title>
 </head>
 <body>
+    <div class="background-image">
     <header class="page-header">
+        <!--Mobile Version navigation-->
       <nav class="nav-header"> 
-          <ul>
+          <ul class="mobile">
               <li><a href="#" class="welcome"> Welcome </a></li>
-              <li> <a href="#"> <img src="./images/Union.svg" alt=""/></a></li>
+              <li> <a href="#" class="union"> <img src="./images/Union.svg" alt=""/></a></li>
+          </ul>
+          <ul class="desktop">
+              <li><a href="#" class="desktop-menu"> Portfolio </a></li>
+              <li><a href="#" class="desktop-menu"> About </a></li>
+              <li><a href="#" class="desktop-menu"> Contact </a></li>
           </ul>
       </nav>
     </header>
       <section class="page-headline">
+          <div class="front-page">
         <h1 class="intro"> Hey there. I’m Joseph 
             <span class="job"> I’m a software developer</span>
         </h1> 
@@ -44,11 +52,14 @@
                 <a href="#"> <img src="./images/angellist.svg" alt="Angelist Icon"></a>
             </li>
         </ul>
-      </section>
-      <section class="recent-work">
         <a href="#" class="normal-button"> <img src="./images/Disabled.svg" alt="Disabled"> </a>
+    </div>
+      </section>
+    </div>
+      <section class="recent-work">
         <h2 class="recent-works">My Recent Works</h2>
         <hr>
+        <div class="article-container">
          <article class="article-card">
              <img src="./images/Imgplaholder.svg" alt="Image placeholder">
             <h2 class="recent-work__items"> Multi-Post Stories Gain+Glory </h2>
@@ -104,6 +115,18 @@
             </ul>
             <button type="button" class="see-projects">See Projects</button>
          </article>
+         <article class="article-card">
+            <img src="./images/Imgplaholder.svg" alt="Image placeholder">
+            <h2 class="recent-work__items"> Multi-Post Stories Gain+Glory </h2>
+            <ul class="recent-work__items-languages">
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>JavaScript</li>
+                <li>html</li>
+            </ul>
+            <button type="button" class="see-projects">See Projects</button>
+         </article>
+        </div>
       </section> 
 <section class="profile">
     <div class="abouttop">
@@ -149,13 +172,19 @@
     </li>
   </ul>
   <footer>
+      <div class="form-footer">
+      <div class="form-paragraph">
      <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+    </div>
+     <div class="form-container">
      <form action="https://formspree.io/f/mayvbgnj" method="POST" class="contact-form">
         <input type="text" name="text" placeholder="Full Name" class="text" maxlength="30" required>
         <input type="email" name="email" class="text" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <textarea class="areatext" maxlength="500" placeholder="Enter text here" required></textarea>
-        <button type="submit" class="get-resume">Get In Touch</button>
+        <button type="submit" class="get-resume" id="get-in-touch">Get In Touch</button>
      </form>
+    </div>
+    </div>
      <ul class="social-handle-icons">
         <li class="twitter">
             <a href="#"> <img src="./images/twitter.svg" alt="Twitter Icon"></a> 

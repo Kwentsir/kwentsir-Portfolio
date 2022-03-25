@@ -1,14 +1,18 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
-.nav-header > ul {
+.mobile {
   display: flex;
   list-style: none;
   justify-content: space-between;
   padding: 25px;
+}
+
+.desktop {
+  display: none;
 }
 
 .welcome {
@@ -163,6 +167,8 @@ hr {
   align-items: center;
   position: relative;
   padding-top: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .profile-me {
@@ -233,6 +239,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .languages {
@@ -320,6 +328,8 @@ button:active {
 footer {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer p {
@@ -335,6 +345,11 @@ footer p {
 .contact-form {
   display: flex;
   flex-direction: column;
+}
+
+.form-footer {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .text {
@@ -383,4 +398,148 @@ footer p {
   margin: 650px auto;
   position: absolute;
   left: 85%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .background-image {
+    background-image: url("./images/desktop-header.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    max-height: 80rem;
+    width: 100%;
+    z-index: -1;
+  }
+
+ .page-headline {
+ background-image: none;
+  }
+
+  .intro-work {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .front-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    max-height: 80rem;
+  }
+
+  .desktop  {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    padding: 24px;
+    list-style: none;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
+  }
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(300px);
+    }
+  }
+
+  .desktop-menu {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+
+
+  }
+  .mobile {
+    display: none;
+  }
+
+  .intro-work {
+    color: #172b4d;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    justify-self: center;    
+    padding: 5px;
+  }
+
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    column-gap: 24px;
+    max-width: 1200px;
+  }
+
+  .recent-work > hr {
+    display: none;
+  }
+
+  .profile-intro {
+    align-self: center;
+    margin-left: 260.5px;
+    margin-right: 259.5px;
+  }
+
+  .article-card {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .resume-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: fff;
+    border-radius: 8px;
+    padding: 16px;
+    list-style: none;
+    gap: 24px;
+  }
+  
+  .form-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-paragraph {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    flex-basis: 45%;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  #get-in-touch {
+    align-self: flex-start;
+    margin-left: 24px;
+  }
+  .intro {
+    padding-bottom: 0; 
+  }
+
+  .contact-form > input, .contact-form > textarea{
+ 
+  }
+
+  .form-container {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
 }
