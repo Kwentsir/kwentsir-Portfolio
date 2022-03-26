@@ -87,7 +87,8 @@ a {
 }
 
 .normal-button {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 62px;
@@ -102,6 +103,10 @@ hr {
   border-radius: 24px;
   width: 48px;
   height: 4px;
+}
+
+.bottom-hr2 {
+  display: none;
 }
 
 .recent-work__items {
@@ -296,6 +301,14 @@ hr {
   bottom: 2px;
 }
 
+.me-desktop1 {
+  display: none;
+}
+
+.me-desktop2 {
+  display: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -316,7 +329,6 @@ button:active {
 footer {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -333,11 +345,6 @@ footer p {
 .contact-form {
   display: flex;
   flex-direction: column;
-}
-
-.form-footer {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .text {
@@ -388,6 +395,10 @@ footer p {
   left: 85%;
 }
 
+#contact-img2 #contact-img3 #contact-img4 {
+  display: none;
+}
+
 @media only screen and (min-width: 1080px) {
   .background-image {
     background-image: url("./images/desktop-header.svg");
@@ -400,13 +411,8 @@ footer p {
     z-index: -1;
   }
 
- .page-headline {
- background-image: none;
-  }
-
-  .intro-work {
-    max-width: 800px;
-    margin: 0 auto;
+  .page-headline {
+    background-image: none;
   }
 
   .front-page {
@@ -417,23 +423,22 @@ footer p {
     max-height: 80rem;
   }
 
-  .desktop  {
+  .desktop {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
     padding: 24px;
     list-style: none;
   }
-  
+
   .desktop-menu {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-
-
   }
+
   .mobile {
     display: none;
   }
@@ -444,8 +449,10 @@ footer p {
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    justify-self: center;    
+    justify-self: center;
     padding: 5px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .article-container {
@@ -461,10 +468,28 @@ footer p {
     display: none;
   }
 
+  .profile-me {
+    margin-top: 80px;
+  }
+
   .profile-intro {
     align-self: center;
     margin-left: 260.5px;
     margin-right: 259.5px;
+  }
+
+  .aboutup {
+    display: none;
+  }
+
+  .aboutdown {
+    display: none;
+  }
+
+  .profile {
+    background-image: url(./images/me-desktop1@2x.svg), url(./images/me-desktop2.svg);
+    background-position: 0% 15%, right top;
+    background-repeat: no-repeat;
   }
 
   .article-card {
@@ -476,28 +501,25 @@ footer p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background: fff;
+    background: white;
     border-radius: 8px;
     padding: 16px;
     list-style: none;
     gap: 24px;
-  }
-  
-  .form-footer {
-    display: flex;
-    flex-direction: row;
   }
 
   .form-paragraph {
     font-weight: 700;
     font-size: 30px;
     line-height: 52px;
-    flex-basis: 45%;
+    flex-basis: 40%;
+    flex-grow: 1;
   }
 
   .contact-form {
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
     text-align: left;
     justify-content: flex-start;
   }
@@ -506,16 +528,61 @@ footer p {
     align-self: flex-start;
     margin-left: 24px;
   }
+
   .intro {
-    padding-bottom: 0; 
+    padding-bottom: 0;
   }
 
-  .contact-form > input, .contact-form > textarea{
- 
+  .recent-works {
+    margin: 52px;
   }
 
   .form-container {
-    flex-grow: 1;
-    max-width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer p {
+    padding-top: 50px;
+  }
+
+  #contact-img {
+    display: none;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .footer-social {
+    margin-top: 300px;
+  }
+
+  .social-handle-icons :nth-child(1) { order: 4; }
+  .social-handle-icons :nth-child(2) { order: 2; }
+  .social-handle-icons :nth-child(3) { order: 5; }
+  .social-handle-icons :nth-child(4) { order: 1; }
+  .social-handle-icons :nth-child(5) { order: 3; }
+
+  .bottom-hr {
+    display: none;
+  }
+
+  footer {
+    background-image: url("./images/Frame.svg"), url("./images/desktop-contact-form.svg"), url("./images/Frame-1.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-position: 0 50%, 30% 70%, 100% 10%;
+  }
+
+  .bottom-hr2 {
+    display: block;
+    width: 100%;
+    height: 2px;
   }
 }
