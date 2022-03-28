@@ -153,8 +153,14 @@ hr {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  width: 122px;
+  width: 122.5px;
   margin-bottom: 24px;
+}
+
+.see-projects:hover {
+  border: #3a4a42 solid 0.2px;
+  color: #36b37f;
+  background-color: #fff;
 }
 
 .profile {
@@ -227,6 +233,12 @@ hr {
   width: 170px;
   margin-top: 24px;
   z-index: 10;
+}
+
+.get-resume:hover {
+  border: #3a4a42 solid 0.2px;
+  color: #36b37f;
+  background-color: #fff;
 }
 
 .resume-items {
@@ -430,6 +442,8 @@ footer p {
     column-gap: 1.5rem;
     padding: 24px;
     list-style: none;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
   }
 
   .desktop-menu {
@@ -553,38 +567,5 @@ footer p {
 
   #contact-img {
     display: none;
-  }
-
-  .email {
-    display: none;
-  }
-
-  .footer-social {
-    margin-top: 300px;
-  }
-
-  .social-handle-icons :nth-child(1) { order: 4; }
-  .social-handle-icons :nth-child(2) { order: 2; }
-  .social-handle-icons :nth-child(3) { order: 5; }
-  .social-handle-icons :nth-child(4) { order: 1; }
-  .social-handle-icons :nth-child(5) { order: 3; }
-
-  .bottom-hr {
-    display: none;
-  }
-
-  footer {
-    background-image: url("./images/Frame.svg"), url("./images/desktop-contact-form.svg"), url("./images/Frame-1.svg");
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-position: 0 50%, 30% 70%, 100% 10%;
-  }
-
-  .bottom-hr2 {
-    display: block;
-    width: 100%;
-    height: 2px;
   }
 }
