@@ -15,7 +15,7 @@
 ## Built With
 
 - Major languages
-   HTML and CSS
+  HTML and CSS
 - Frameworks
 - Technologies used
 
@@ -30,7 +30,6 @@ To get a local copy up and running follow these simple example steps.
 - Write `git clone https://github.com/Kwentsir/Kwentsir-Portfolio.git`.
 - Go to the repository folder in your command prompt `cd Kwentsir-Portfolio`.
 - Run `npm install` to install the dev dependencies for linters.
-
 
 
 ## Viewing Site
