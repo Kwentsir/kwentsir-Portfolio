@@ -33,6 +33,13 @@ To get a local copy up and running follow these simple example steps.
 
 
 
+## Viewing Site
+To view the complete site, please follow the link below.
+https://kwentsir.github.io/kwentsir-Portfolio/
+
+
+
+
 ## Authors 
 
 👤 **Author1**
