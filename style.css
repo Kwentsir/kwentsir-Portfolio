@@ -87,7 +87,8 @@ a {
 }
 
 .normal-button {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 62px;
@@ -104,8 +105,13 @@ hr {
   height: 4px;
 }
 
+.bottom-hr2 {
+  display: none;
+}
+
 .recent-work__items {
-  color: #3a4a42;
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
   text-align: center;
   font-weight: 600;
   font-size: 24px;
@@ -133,7 +139,7 @@ hr {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3a4a42;
+  color: #172b4d;
 }
 
 .see-projects {
@@ -308,6 +314,14 @@ hr {
   bottom: 2px;
 }
 
+.me-desktop1 {
+  display: none;
+}
+
+.me-desktop2 {
+  display: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -328,7 +342,6 @@ button:active {
 footer {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -345,11 +358,6 @@ footer p {
 .contact-form {
   display: flex;
   flex-direction: column;
-}
-
-.form-footer {
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .text {
@@ -400,25 +408,24 @@ footer p {
   left: 85%;
 }
 
+#contact-img2 #contact-img3 #contact-img4 {
+  display: none;
+}
+
 @media only screen and (min-width: 1080px) {
   .background-image {
     background-image: url("./images/desktop-header.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    max-height: 80rem;
+    height: 170vh;
     width: 100%;
     z-index: -1;
   }
 
- .page-headline {
- background-image: none;
-  }
-
-  .intro-work {
-    max-width: 800px;
-    margin: 0 auto;
+  .page-headline {
+    background-image: none;
+    margin-top: 15%;
   }
 
   .front-page {
@@ -429,7 +436,7 @@ footer p {
     max-height: 80rem;
   }
 
-  .desktop  {
+  .desktop {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
@@ -439,24 +446,14 @@ footer p {
     animation-delay: 1000ms;
   }
 
-  @keyframes moveToRight {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(300px);
-    }
-  }
-
   .desktop-menu {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-
-
   }
+
   .mobile {
     display: none;
   }
@@ -467,8 +464,10 @@ footer p {
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    justify-self: center;    
+    justify-self: center;
     padding: 5px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .article-container {
@@ -477,17 +476,35 @@ footer p {
     margin: 0 auto;
     justify-content: center;
     column-gap: 24px;
-    max-width: 1200px;
+    max-width: 100%;
   }
 
   .recent-work > hr {
     display: none;
   }
 
+  .profile-me {
+    margin-top: 80px;
+  }
+
   .profile-intro {
     align-self: center;
     margin-left: 260.5px;
     margin-right: 259.5px;
+  }
+
+  .aboutup {
+    display: none;
+  }
+
+  .aboutdown {
+    display: none;
+  }
+
+  .profile {
+    background-image: url(./images/me-desktop1@2x.svg), url(./images/me-desktop2.svg);
+    background-position: 0% 15%, right top;
+    background-repeat: no-repeat;
   }
 
   .article-card {
@@ -499,28 +516,25 @@ footer p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background: fff;
+    background: white;
     border-radius: 8px;
     padding: 16px;
     list-style: none;
     gap: 24px;
-  }
-  
-  .form-footer {
-    display: flex;
-    flex-direction: row;
   }
 
   .form-paragraph {
     font-weight: 700;
     font-size: 30px;
     line-height: 52px;
-    flex-basis: 45%;
+    flex-basis: 40%;
+    flex-grow: 1;
   }
 
   .contact-form {
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
     text-align: left;
     justify-content: flex-start;
   }
@@ -529,17 +543,29 @@ footer p {
     align-self: flex-start;
     margin-left: 24px;
   }
+
   .intro {
-    padding-bottom: 0; 
+    padding-bottom: 0;
   }
 
-  .contact-form > input, .contact-form > textarea{
- 
+  .recent-works {
+    margin: 24px;
+    padding-top: 400px;
   }
 
   .form-container {
-    flex-grow: 1;
-    max-width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  footer p {
+    padding-top: 50px;
+  }
+
+  #contact-img {
+    display: none;
+  }
 }
