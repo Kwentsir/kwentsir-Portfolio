@@ -400,35 +400,34 @@ footer p {
   display: none;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 67.5rem) {
   .background-image {
     background-image: url("./images/desktop-header.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 170vh;
     width: 100%;
     z-index: -1;
+    height: 50rem;
   }
 
   .page-headline {
     background-image: none;
-    margin-top: 15%;
   }
 
   .front-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
+    height: 30rem;
     max-height: 80rem;
+    width: 100%;
   }
 
   .desktop {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
-    padding: 24px;
+    padding: 1.5rem;
     list-style: none;
   }
 
@@ -446,13 +445,13 @@ footer p {
 
   .intro-work {
     color: #172b4d;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
     justify-self: center;
     padding: 5px;
-    max-width: 800px;
+    max-width: 40rem;
     margin: 0 auto;
   }
 
