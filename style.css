@@ -400,6 +400,17 @@ footer p {
   display: none;
 }
 
+.article-card:hover,
+.languages:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.social-handle-icons li:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
 @media only screen and (min-width: 67.5rem) {
   .background-image {
     background-image: url("./images/desktop-header.svg");
@@ -585,5 +596,16 @@ footer p {
     display: block;
     width: 100%;
     height: 2px;
+  }
+
+  .article-card:hover,
+  .languages:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .social-handle-icons li:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
   }
 }
