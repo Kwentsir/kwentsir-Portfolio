@@ -153,8 +153,14 @@ hr {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  width: 122px;
+  width: 122.5px;
   margin-bottom: 24px;
+}
+
+.see-projects:hover {
+  border: #3a4a42 solid 0.2px;
+  color: #36b37f;
+  background-color: #fff;
 }
 
 .profile {
@@ -227,6 +233,12 @@ hr {
   width: 170px;
   margin-top: 24px;
   z-index: 10;
+}
+
+.get-resume:hover {
+  border: #3a4a42 solid 0.2px;
+  color: #36b37f;
+  background-color: #fff;
 }
 
 .resume-items {
@@ -440,6 +452,8 @@ footer p {
     column-gap: 1.5rem;
     padding: 1.5rem;
     list-style: none;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
   }
 
   .desktop-menu {
