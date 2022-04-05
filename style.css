@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +8,7 @@
 }
 
 .mobile {
-  display: flex;  
+  display: flex;
   list-style: none;
   justify-content: space-between;
   padding: 25px;
@@ -17,6 +20,7 @@
   color: #67798e;
   margin-bottom: 34px;
 }
+
 .fa-x {
   all: unset;
 }
@@ -61,6 +65,7 @@ a {
   list-style: none;
   margin-bottom: 40px;
 }
+
 .social-handle-icons {
   display: flex;
   list-style: none;
@@ -454,11 +459,10 @@ footer p {
 }
 
 .mobile-list a {
-  font-family: Inter;
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #3a4a42;
 }
@@ -486,8 +490,7 @@ footer p {
     width: 100%;
   }
 
-  .mobile-list 
-  {
+  .mobile-list {
     display: none !important;
   }
 
@@ -557,7 +560,8 @@ footer p {
   }
 
   .profile {
-    background-image: url(./images/me-desktop1@2x.svg),
+    background-image:
+      url(./images/me-desktop1@2x.svg),
       url(./images/me-desktop2.svg);
     background-position: 0% 15%, right top;
     background-repeat: no-repeat;
@@ -582,6 +586,7 @@ footer p {
   .close-nav {
     display: none;
   }
+
   .form-paragraph {
     font-weight: 700;
     font-size: 30px;
@@ -639,15 +644,19 @@ footer p {
   .social-handle-icons :nth-child(1) {
     order: 4;
   }
+
   .social-handle-icons :nth-child(2) {
     order: 2;
   }
+
   .social-handle-icons :nth-child(3) {
     order: 5;
   }
+
   .social-handle-icons :nth-child(4) {
     order: 1;
   }
+
   .social-handle-icons :nth-child(5) {
     order: 3;
   }
@@ -657,8 +666,10 @@ footer p {
   }
 
   footer {
-    background-image: url("./images/Frame.svg"),
-      url("./images/desktop-contact-form.svg"), url("./images/Frame-1.svg");
+    background-image:
+      url("./images/Frame.svg"),
+      url("./images/desktop-contact-form.svg"),
+      url("./images/Frame-1.svg");
     background-repeat: no-repeat;
     width: 100%;
     display: flex;
