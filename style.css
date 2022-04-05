@@ -5,7 +5,7 @@
 }
 
 .mobile {
-  display: flex;
+  display: flex;  
   list-style: none;
   justify-content: space-between;
   padding: 25px;
@@ -16,6 +16,9 @@
   z-index: 22;
   color: #67798e;
 }
+.fa-x {
+  all: unset;
+}
 
 .welcome {
   color: #28352f;
@@ -23,7 +26,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: white;
   box-sizing: border-box;
 }
@@ -37,8 +40,8 @@ a {
   background-size: cover;
 }
 
-.desktop {
-  display: none;
+.mobile-list {
+  display: none !important;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -126,7 +129,7 @@ hr {
 }
 
 .recent-work__items {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #172b4d;
   text-align: center;
   font-weight: 600;
@@ -236,7 +239,7 @@ hr {
 
 .get-resume {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   background-color: #36b37f;
   border: none;
@@ -462,9 +465,12 @@ footer p {
     width: 100%;
   }
 
+  .mobile-list 
+  {
+    display: none;
+  }
 
   .desktop {
-    all: unset;
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
@@ -530,7 +536,8 @@ footer p {
   }
 
   .profile {
-    background-image: url(./images/me-desktop1@2x.svg), url(./images/me-desktop2.svg);
+    background-image: url(./images/me-desktop1@2x.svg),
+      url(./images/me-desktop2.svg);
     background-position: 0% 15%, right top;
     background-repeat: no-repeat;
   }
@@ -551,6 +558,9 @@ footer p {
     gap: 24px;
   }
 
+  .close-nav {
+    display: none;
+  }
   .form-paragraph {
     font-weight: 700;
     font-size: 30px;
@@ -605,18 +615,29 @@ footer p {
     margin-top: 300px;
   }
 
-  .social-handle-icons :nth-child(1) { order: 4; }
-  .social-handle-icons :nth-child(2) { order: 2; }
-  .social-handle-icons :nth-child(3) { order: 5; }
-  .social-handle-icons :nth-child(4) { order: 1; }
-  .social-handle-icons :nth-child(5) { order: 3; }
+  .social-handle-icons :nth-child(1) {
+    order: 4;
+  }
+  .social-handle-icons :nth-child(2) {
+    order: 2;
+  }
+  .social-handle-icons :nth-child(3) {
+    order: 5;
+  }
+  .social-handle-icons :nth-child(4) {
+    order: 1;
+  }
+  .social-handle-icons :nth-child(5) {
+    order: 3;
+  }
 
   .bottom-hr {
     display: none;
   }
 
   footer {
-    background-image: url("./images/Frame.svg"), url("./images/desktop-contact-form.svg"), url("./images/Frame-1.svg");
+    background-image: url("./images/Frame.svg"),
+      url("./images/desktop-contact-form.svg"), url("./images/Frame-1.svg");
     background-repeat: no-repeat;
     width: 100%;
     display: flex;

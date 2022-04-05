@@ -1,4 +1,4 @@
-const navMenu = document.querySelector('.desktop');
+const navMenu = document.querySelector('.mobile-list');
 const navItems = document.querySelectorAll('.nav-items');
 const closeNav = document.querySelector('.close-nav');
 const humburger = document.querySelector('.union');
