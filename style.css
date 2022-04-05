@@ -15,6 +15,7 @@
   display: none;
   z-index: 22;
   color: #67798e;
+  margin-bottom: 34px;
 }
 .fa-x {
   all: unset;
@@ -41,7 +42,7 @@ a {
 }
 
 .mobile-list {
-  display: none !important;
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -52,8 +53,14 @@ a {
   background-color: #fff;
   z-index: 20;
   cursor: pointer;
+  padding-top: 54px;
+  padding-left: 28px;
 }
 
+.mobile-list .nav-items {
+  list-style: none;
+  margin-bottom: 40px;
+}
 .social-handle-icons {
   display: flex;
   list-style: none;
@@ -442,6 +449,20 @@ footer p {
   transition: 0.5s;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile-list a {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3a4a42;
+}
+
 @media only screen and (min-width: 67.5rem) {
   .background-image {
     background-image: url("./images/desktop-header.svg");
@@ -467,7 +488,7 @@ footer p {
 
   .mobile-list 
   {
-    display: none;
+    display: none !important;
   }
 
   .desktop {
