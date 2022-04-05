@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,8 +14,15 @@
   padding: 25px;
 }
 
-.desktop {
+.close-nav {
   display: none;
+  z-index: 22;
+  color: #67798e;
+  margin-bottom: 34px;
+}
+
+.fa-x {
+  all: unset;
 }
 
 .welcome {
@@ -21,7 +31,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: white;
   box-sizing: border-box;
 }
@@ -33,6 +43,27 @@ a {
 .page-headline {
   background-image: url("./images/header-illsutration-mobile@2x.svg");
   background-size: cover;
+}
+
+.mobile-list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 20;
+  cursor: pointer;
+  padding-top: 54px;
+  padding-left: 28px;
+}
+
+.mobile-list .nav-items {
+  list-style: none;
+  margin-bottom: 40px;
 }
 
 .social-handle-icons {
@@ -110,7 +141,7 @@ hr {
 }
 
 .recent-work__items {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #172b4d;
   text-align: center;
   font-weight: 600;
@@ -220,7 +251,7 @@ hr {
 
 .get-resume {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   background-color: #36b37f;
   border: none;
@@ -423,6 +454,19 @@ footer p {
   transition: 0.5s;
 }
 
+.desktop {
+  display: none;
+}
+
+.mobile-list a {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #3a4a42;
+}
+
 @media only screen and (min-width: 67.5rem) {
   .background-image {
     background-image: url("./images/desktop-header.svg");
@@ -444,6 +488,10 @@ footer p {
     height: 30rem;
     max-height: 80rem;
     width: 100%;
+  }
+
+  .mobile-list {
+    display: none !important;
   }
 
   .desktop {
@@ -512,7 +560,9 @@ footer p {
   }
 
   .profile {
-    background-image: url(./images/me-desktop1@2x.svg), url(./images/me-desktop2.svg);
+    background-image:
+      url(./images/me-desktop1@2x.svg),
+      url(./images/me-desktop2.svg);
     background-position: 0% 15%, right top;
     background-repeat: no-repeat;
   }
@@ -531,6 +581,10 @@ footer p {
     padding: 16px;
     list-style: none;
     gap: 24px;
+  }
+
+  .close-nav {
+    display: none;
   }
 
   .form-paragraph {
@@ -587,18 +641,35 @@ footer p {
     margin-top: 300px;
   }
 
-  .social-handle-icons :nth-child(1) { order: 4; }
-  .social-handle-icons :nth-child(2) { order: 2; }
-  .social-handle-icons :nth-child(3) { order: 5; }
-  .social-handle-icons :nth-child(4) { order: 1; }
-  .social-handle-icons :nth-child(5) { order: 3; }
+  .social-handle-icons :nth-child(1) {
+    order: 4;
+  }
+
+  .social-handle-icons :nth-child(2) {
+    order: 2;
+  }
+
+  .social-handle-icons :nth-child(3) {
+    order: 5;
+  }
+
+  .social-handle-icons :nth-child(4) {
+    order: 1;
+  }
+
+  .social-handle-icons :nth-child(5) {
+    order: 3;
+  }
 
   .bottom-hr {
     display: none;
   }
 
   footer {
-    background-image: url("./images/Frame.svg"), url("./images/desktop-contact-form.svg"), url("./images/Frame-1.svg");
+    background-image:
+      url("./images/Frame.svg"),
+      url("./images/desktop-contact-form.svg"),
+      url("./images/Frame-1.svg");
     background-repeat: no-repeat;
     width: 100%;
     display: flex;

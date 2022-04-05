@@ -15,7 +15,7 @@
 ## Built With
 
 - Major languages
-  HTML and CSS
+  HTML, CSS and JavaScript
 - Frameworks
 - Technologies used
 
@@ -51,9 +51,11 @@ Joseph Kwesi Kwentsir
 👤 **Author2**
 NOUREDDINE MEZIANY
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Author3**
+Anthony Mwenyo
+
+👤 **Author4**
+Youssuf Hesham
 
 
 ## 🤝 Contributing
