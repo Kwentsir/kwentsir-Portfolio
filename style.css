@@ -363,11 +363,13 @@ footer button {
 }
 
 button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.24);
+  font-weight: bold;
 }
 
 button:active {
-  background-color: #008552;
+  background-color: #000;
+  font-weight: bold;
 }
 
 footer {
