@@ -37,6 +37,8 @@ const dynamicProjects = [
     longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: '.images/SnapshootPopUpDesktop.svg',
     mobilePopupImage: './images/SnapshotPopUpMobile.svg',
+    liveSource: '',
+    seeSource: '',
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
@@ -53,6 +55,8 @@ const dynamicProjects = [
     longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: '.images/SnapshootPopUpDesktop.svg',
     mobiePopupImage: './images/SnapshotPopUpMobile.svg',
+    liveSource: '',
+    seeSource: '',
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
@@ -69,6 +73,8 @@ const dynamicProjects = [
     longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: '.images/SnapshootPopUpDesktop.svg',
     mobiePopupImage: './images/SnapshotPopUpMobile.svg',
+    liveSource: '',
+    seeSource: '',
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
@@ -85,6 +91,8 @@ const dynamicProjects = [
     longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: '.images/SnapshootPopUpDesktop.svg',
     mobiePopupImage: './images/SnapshotPopUpMobile.svg',
+    liveSource: '',
+    seeSource: '',
   },
   {
     name: 'Multi-Post Stories Gain+Glory',
@@ -101,6 +109,8 @@ const dynamicProjects = [
     longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: '.images/SnapshootPopUpDesktop.svg',
     mobiePopupImage: './images/SnapshotPopUpMobile.svg',
+    liveSource: '',
+    seeSource: '',
   },
 ];
 
@@ -108,29 +118,28 @@ function getElement(className) {
   return document.querySelector(className);
 }
 
+const technologies = [];
 function technologyList(technologies) {
   const langList = document.createElement('ul');
   langList.classList.add('recent-work__items-languages');
   for (let i = 0; i < technologies.length; i += 1) {
     const langElement = document.createElement('li');
-    langElement.classList.add('recent-work__items-languages > li');
+    langElement.classList.add('lang');
+    langList.appendChild(langElement);
     langElement.innerHTML = technologies[i];
   }
   return langList.innerHTML;
 }
 
+let allProjects = [];
 function myWorkSection() {
   for (let i = 0; i < dynamicProjects.length; i += 1) {
-    const allProjects = dynamicProjects[i];
+    allProjects = dynamicProjects[i];
     const { technologies } = allProjects;
-    const allProjectItems = [];
-    for (let j = 0; j < technologies.length; j += 1) {
-      allProjectItems.push(`<li class="lang"> ${technologies[j]}</li>`);
-    }
+    const workSection = document.createElement('template');
+    workSection.innerHTML = `<article class="article-card"> <img src="./images/Imgplaholder.svg" alt="Image placeholder"> <h2 class="recent-work__items">${allProjects.name}</h2> <ul class="recent-work__items-languages">${technologyList(technologies)}</ul> <button type="button" class="see-projects">See Projects</button> </article>`;
+    getElement('.recent-work').appendChild(workSection.content);
   }
-  const workSection = document.createElement('mywork-section');
-  workSection.innerHTML = `<article class="article-card"> <img src="./images/Imgplaholder.svg" alt="Image placeholder"> <h2 class="recent-work__items">${allProjects.name}</h2> <ul class="recent-work__items-languages">${technologyList(technologies)}</ul> <button type="button" class="see-projects">See Projects</button> </article>`;
-  getElement('.recent-work').appendChild(workSection.content.firstChild);
 }
 
 window.onload = myWorkSection;

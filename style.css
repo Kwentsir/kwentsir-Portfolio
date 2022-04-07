@@ -471,6 +471,7 @@ footer p {
 
 @media only screen and (min-width: 67.5rem) {
   .background-image {
+    position:absolute;
     background-image: url("./images/desktop-header.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -487,7 +488,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30rem;
+    height: 40rem;
     max-height: 80rem;
     width: 100%;
   }
