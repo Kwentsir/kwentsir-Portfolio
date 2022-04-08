@@ -330,6 +330,7 @@ hr {
   color: #36b37e;
 }
 
+
 .languages > h2 {
   display: flex;
   align-self: center;
@@ -530,8 +531,10 @@ footer p {
 }
 .close-tbuton {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 5%;
+  right: 5%;
+  color: white;
+  cursor: pointer;
 }
 
 
