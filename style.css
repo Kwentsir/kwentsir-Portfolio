@@ -306,9 +306,21 @@ hr {
   flex-direction: row;
 }
 
+.mob
 .my-languages > li {
   padding: 8px 12px;
   background: #fff;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
+.mobile-poplanguages > li {
+  padding: 8px 12px;
+  background: #EBF0EE;
   border-radius: 4px;
   margin-bottom: 8px;
   font-weight: 600;
@@ -382,16 +394,12 @@ hr {
 
 .mobile-poplanguages {
 display: flex;
-flex-direction: column;
 gap: 8px;
 list-style: none;
 font-weight: 600;
 font-size: 12px;
 line-height: 16px;
 color: #3a4a42;
-background-color: #ebf0ee;
-padding: 8px 12px;
-border-radius: 4px;
 }
 
 .mobile-popparagraph {
@@ -516,6 +524,16 @@ footer p {
   text-align: left;
   color: #3a4a42;
 }
+
+.pop-imagesbtn {
+  position: relative;
+}
+.close-tbuton {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
 
 @media only screen and (min-width: 67.5rem) {
   .background-image {
