@@ -230,6 +230,28 @@ hr {
   display: grid;
 }
 
+.mobile-popbutton {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 16px;
+
+}
+
+
+.popup-button {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #36b37f;
+  border-radius: 4px;
+}
+.popup-button p {
+  color: white;
+}
+
+
 .article-card {
   display: flex;
   flex-direction: column;
@@ -378,6 +400,7 @@ hr {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  padding: 10px
 }
 
 .mobile-popimg {
@@ -617,6 +640,8 @@ footer p {
     margin-top: 80px;
   }
 
+
+
   .profile-intro {
     align-self: center;
     margin-left: 260.5px;
@@ -771,4 +796,5 @@ footer p {
     grid-template-columns: auto auto auto;
     column-gap: 25px;
   }
+  
 }
