@@ -2,7 +2,6 @@ const navMenu = document.querySelector(".mobile-list");
 const navItems = document.querySelectorAll(".nav-items");
 const closeNav = document.querySelector(".close-nav");
 const humburger = document.querySelector(".union");
-const projectspopup = document.querySelectorAll("#see-project");
 function menuToggler() {
   if (navMenu.classList.contains("displayMenu")) {
     navMenu.classList.remove("displayMenu");
@@ -143,22 +142,35 @@ function myWorkSection() {
     allProjects = dynamicProjects[i];
     const { technologies } = allProjects;
     const workSection = document.createElement("template");
-    workSection.innerHTML = `<article class="article-card"> <img src="./images/Imgplaholder.svg" alt="Image placeholder"> <h2 class="recent-work__items">${
-      allProjects.name
-    }</h2> <ul class="recent-work__items-languages">${technologyList(
+    workSection.innerHTML = `<article class="article-card"> 
+    <img src="./images/Imgplaholder.svg" alt="Image placeholder"> <h2 class="recent-work__items">
+    ${allProjects.name}
+    </h2> <ul class="recent-work__items-languages">${technologyList(
       technologies
-    )}</ul> <button type="button" class="see-projects" id="see-project">See Projects</button> </article>`;
-    getElement(".recent-work").appendChild(workSection.content);
+    )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
+    getElement(".recent-work").appendChild(workSection.content.firstChild);
   }
 }
 
-window.onload = myWorkSection;
+let projectspopup
 
-const mobilePop = document.querySelector(".mobile-popcontainer");
-function popUp(event) {
+
+function popUp() {
+  const mobilePop = document.querySelector(".mobile-popcontainer");
   mobilePop.style.display = "flex";
 }
-console.log(projectspopup);
-projectspopup.forEach((projectpopup) =>
-  projectpopup.addEventListener("click", popUp)
-);
+function getButtons( ) {
+  projectspopup =  document.getElementsByClassName("open-modal");
+  projectspopup = Array.from(projectspopup)
+  projectspopup.forEach((e) => e.addEventListener('click', popUp));
+
+}
+
+
+window.onload = ()  => {  myWorkSection()
+  getButtons()
+  
+};
+
+
+
