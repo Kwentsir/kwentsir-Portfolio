@@ -7,6 +7,15 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .mobile {
   display: flex;
   list-style: none;
@@ -237,6 +246,12 @@ hr {
 
 }
 
+.desktop-popbutton {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 16px;
+
+}
 
 .popup-button {
   display: flex;
@@ -338,8 +353,9 @@ hr {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #367b3e;
 }
+
 .mobile-poplanguages > li {
   padding: 8px 12px;
   background: #EBF0EE;
@@ -349,9 +365,20 @@ hr {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #3a4a42;
 }
 
+.desktop-poplanguages>li {
+  padding: 8px 12px;
+  background: #EBF0EE;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #344563;
+}
 
 .languages > h2 {
   display: flex;
@@ -395,6 +422,27 @@ hr {
   margin-bottom: 34px;
 }
 
+.mobile-popcontainer {
+  display: none;
+  background-color: transparent;
+  background-color: hsla(216, 14%, 79%, 0.693);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.desktop-popcontainer {
+  display: none;
+}
+
 .mobile-popclass {
   display: block;
   background: #fff;
@@ -427,6 +475,40 @@ color: #3a4a42;
 }
 
 .mobile-popparagraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.desktop-popclass {
+  display: block;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 10px
+}
+
+.desktop-popimg {
+  width: 100%;
+}
+
+.desktop-popheadline {
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.desktop-poplanguages {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.desktop-popparagraph {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -708,7 +790,7 @@ footer p {
   .intro {
     padding-bottom: 0;
   }
-
+ 
   .recent-works {
     margin: 24px;
     padding-top: 400px;
@@ -733,6 +815,27 @@ footer p {
 
   .email {
     display: none;
+  }
+
+  .mobile-popcontainer {
+    display: none;
+  }
+
+  .desktop-popcontainer {
+    background-color: transparent;
+    background-color: hsla(216, 14%, 79%, 0.693);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 200px;
   }
 
   .footer-social {
@@ -796,5 +899,4 @@ footer p {
     grid-template-columns: auto auto auto;
     column-gap: 25px;
   }
-  
 }
