@@ -7,15 +7,6 @@
   padding: 0;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 .mobile {
   display: flex;
   list-style: none;
@@ -243,14 +234,12 @@ hr {
   display: flex;
   column-gap: 12px;
   margin-top: 16px;
-
 }
 
 .desktop-popbutton {
   display: flex;
   column-gap: 12px;
   margin-top: 16px;
-
 }
 
 .popup-button {
@@ -262,10 +251,6 @@ hr {
   background: #36b37f;
   border-radius: 4px;
 }
-.popup-button p {
-  color: white;
-}
-
 
 .article-card {
   display: flex;
@@ -343,22 +328,9 @@ hr {
   flex-direction: row;
 }
 
-.mob
-.my-languages > li {
-  padding: 8px 12px;
-  background: #fff;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #367b3e;
-}
-
 .mobile-poplanguages > li {
   padding: 8px 12px;
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 4px;
   margin-bottom: 8px;
   font-weight: 600;
@@ -368,9 +340,9 @@ hr {
   color: #3a4a42;
 }
 
-.desktop-poplanguages>li {
+.desktop-poplanguages > li {
   padding: 8px 12px;
-  background: #EBF0EE;
+  background: #ebf0ee;
   border-radius: 4px;
   margin-bottom: 8px;
   font-weight: 600;
@@ -415,11 +387,20 @@ hr {
   display: none;
 }
 
-.close-button {
+.mobpop-exit {
   display: block;
+  position: absolute;
   z-index: 22;
-  color: #67798e;
   margin-bottom: 34px;
+  top: 0;
+  right: 0;
+}
+
+.desktoppop-exit {
+position: absolute;
+right: 29%;
+top: 12%;
+margin-bottom: 40px;
 }
 
 .mobile-popcontainer {
@@ -448,13 +429,11 @@ hr {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 10px
+  padding: 10px;
 }
 
 .mobile-popimg {
-  
   width: 100%;
-  
 }
 
 .mobile-popheadline {
@@ -465,13 +444,13 @@ hr {
 }
 
 .mobile-poplanguages {
-display: flex;
-gap: 8px;
-list-style: none;
-font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-color: #3a4a42;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
 }
 
 .mobile-popparagraph {
@@ -486,7 +465,7 @@ color: #3a4a42;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 10px
+  padding: 10px;
 }
 
 .desktop-popimg {
@@ -548,6 +527,14 @@ footer p {
   color: #172b4d;
   margin: 0 24px;
   text-align: center;
+}
+
+.popup-button p {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
 }
 
 .contact-form {
@@ -634,6 +621,7 @@ footer p {
 .pop-imagesbtn {
   position: relative;
 }
+
 .close-tbuton {
   position: absolute;
   top: 5%;
@@ -642,10 +630,9 @@ footer p {
   cursor: pointer;
 }
 
-
 @media only screen and (min-width: 67.5rem) {
   .background-image {
-    position:absolute;
+    position: absolute;
     background-image: url("./images/desktop-header.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -722,8 +709,6 @@ footer p {
     margin-top: 80px;
   }
 
-
-
   .profile-intro {
     align-self: center;
     margin-left: 260.5px;
@@ -790,7 +775,7 @@ footer p {
   .intro {
     padding-bottom: 0;
   }
- 
+
   .recent-works {
     margin: 24px;
     padding-top: 400px;
@@ -830,12 +815,13 @@ footer p {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 600;
     display: none;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding: 200px;
+    padding: 300px;
+    margin-bottom: 50px;
   }
 
   .footer-social {
@@ -894,6 +880,7 @@ footer p {
     transform: scale(1.5);
     transition: 0.5s;
   }
+
   .recent-work {
     justify-content: center;
     grid-template-columns: auto auto auto;
