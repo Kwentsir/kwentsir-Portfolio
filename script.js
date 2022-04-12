@@ -154,8 +154,7 @@ function myWorkSection() {
 let projectspopup;
 
 function popUp() {
-  const mobilePop = document.queryselector('.mobile-popcontainer');
-  mobilePop.style.display = 'flex';
+  const mobilePop = document.querySelector('.mobile-popcontainer');
   const mq = window.matchMedia('(min-width: 67.5rem)');
   if (mq.matches) {
     // window width is at less than
@@ -166,6 +165,7 @@ function popUp() {
     mobilePop.style.display = 'flex';
   }
 }
+
 function getButtons() {
   projectspopup = document.getElementsByClassName('open-modal');
   projectspopup = Array.from(projectspopup);

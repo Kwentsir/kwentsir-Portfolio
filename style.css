@@ -247,7 +247,7 @@ hr {
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 12px;
+  padding: 10px 5px;
   background: #36b37f;
   border-radius: 4px;
 }
@@ -285,7 +285,7 @@ hr {
   line-height: 20px;
   width: 170px;
   margin-top: 24px;
-  z-index: 10;
+  z-index: 4;
 }
 
 .get-resume:hover {
@@ -326,6 +326,18 @@ hr {
   padding: 11px;
   font-size: 12px;
   flex-direction: row;
+}
+
+.my-languages > li {
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
 }
 
 .mobile-poplanguages > li {
@@ -394,13 +406,7 @@ hr {
   margin-bottom: 34px;
   top: 0;
   right: 0;
-}
-
-.desktoppop-exit {
-position: absolute;
-right: 29%;
-top: 12%;
-margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .mobile-popcontainer {
@@ -413,7 +419,7 @@ margin-bottom: 40px;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -465,7 +471,8 @@ margin-bottom: 40px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 10px;
+  padding: 78px 24px;
+  margin: 200px;
 }
 
 .desktop-popimg {
@@ -473,8 +480,13 @@ margin-bottom: 40px;
 }
 
 .desktop-popheadline {
-  line-height: 44px;
+  font-size: 32px;
   color: #172b4d;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px !important;
+  line-height: 44px;
 }
 
 .desktop-poplanguages {
@@ -820,7 +832,6 @@ footer p {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding: 300px;
     margin-bottom: 50px;
   }
 
@@ -885,5 +896,15 @@ footer p {
     justify-content: center;
     grid-template-columns: auto auto auto;
     column-gap: 25px;
+  }
+
+  .desktoppop-exit {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: initial;
+    margin-right: 14px;
+    margin-left: auto;
+    margin-bottom: 14px;
   }
 }
