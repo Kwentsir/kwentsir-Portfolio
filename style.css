@@ -19,6 +19,7 @@
   z-index: 22;
   color: #67798e;
   margin-bottom: 34px;
+  cursor: pointer;
 }
 
 .fa-x {
@@ -56,7 +57,6 @@ a {
   bottom: 0;
   background-color: #fff;
   z-index: 20;
-  cursor: pointer;
   padding-top: 54px;
   padding-left: 28px;
 }
