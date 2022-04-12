@@ -11,7 +11,7 @@ function menuToggler() {
   } else {
     navMenu.classList.add('displayMenu');
     humburger.style.display = 'none';
-    closeNav.style.display = 'block';
+    closeNav.style.display = 'flex';
     navMenu.style.display = 'block';
   }
 }

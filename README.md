@@ -2,7 +2,7 @@
 
 # Project Name : Joseph Kwesi Kwentsir Portfolio
 
->This is the mobile skeleton of my portfolio.
+> This is the mobile skeleton of my portfolio.
 
 ![Menu Page](./Screenshots/menupage.png)
 ![Profile Page](./Screenshots/profilepage1.png)
@@ -21,7 +21,6 @@
 
 ## Getting Started
 
-
 To get a local copy up and running follow these simple example steps.
 
 - Copy this link `https://github.com/Kwentsir/Kwentsir-Portfolio`.
@@ -31,15 +30,12 @@ To get a local copy up and running follow these simple example steps.
 - Go to the repository folder in your command prompt `cd Kwentsir-Portfolio`.
 - Run `npm install` to install the dev dependencies for linters.
 
-
 ## Viewing Site
+
 To view the complete site, please follow the link below.
 https://kwentsir.github.io/kwentsir-Portfolio/
 
-
-
-
-## Authors 
+## Authors
 
 👤 **Author1**
 Joseph Kwesi Kwentsir
@@ -57,6 +53,8 @@ Anthony Mwenyo
 👤 **Author4**
 Youssuf Hesham
 
+👤 **Author5**
+Bizimungu Pascal
 
 ## 🤝 Contributing
 
@@ -67,7 +65,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
