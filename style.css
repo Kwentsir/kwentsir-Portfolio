@@ -436,6 +436,11 @@ hr {
   display: none;
 }
 
+.desktop-popimages {
+display: flex !important;
+position: relative;
+}
+
 .mobile-popclass {
   display: block;
   background: #fff;
@@ -483,6 +488,7 @@ hr {
 
 .desktop-popimg {
   width: 100%;
+  margin-top: 50px;
 }
 
 .desktop-popheadline {
@@ -908,6 +914,7 @@ footer p {
     position: absolute;
     right: 0;
     top: 0;
+    cursor: pointer;
   }
 
   .desktop-popcontainer {

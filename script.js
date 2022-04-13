@@ -158,15 +158,13 @@ let projectspopup;
 function popUp() {
   const mq = window.matchMedia("(min-width: 67.5rem)");
   if (mq.matches) {
-    // window width is at less than
-    const mobile = document.querySelector(".mobile-popcontainer");
-    const desktop = document.querySelector(".desktop-popcontainer");
-    desktop.style.display = "flex";
-    mobile.style.display = "none";
+    // window width is at  1080 px or more
+     const desktop = document.querySelector(".desktop-popcontainer");
+     desktop.style.display = "flex";
   } else {
-    // window width is greater than 570px
-    mobile.style.display = "flex";
-    desktop.style.display = "none";
+    // window width is less than 1080px
+       const mobile = document.querySelector(".mobile-popcontainer");
+       mobile.style.display = "flex";
   }
 }
 
@@ -175,6 +173,7 @@ function getButtons() {
   projectspopup = Array.from(projectspopup);
   projectspopup.forEach((e) => e.addEventListener("click", popUp));
 }
+
 
 window.onload = () => {
   myWorkSection();
