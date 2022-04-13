@@ -156,15 +156,17 @@ function myWorkSection() {
 let projectspopup;
 
 function popUp() {
-  const mobilePop = document.querySelector(".mobile-popcontainer");
   const mq = window.matchMedia("(min-width: 67.5rem)");
   if (mq.matches) {
     // window width is at less than
+    const mobile = document.querySelector(".mobile-popcontainer");
     const desktop = document.querySelector(".desktop-popcontainer");
     desktop.style.display = "flex";
+    mobile.style.display = "none";
   } else {
-    // window width is greater than 570pxcon
-    mobilePop.style.display = "flex";
+    // window width is greater than 570px
+    mobile.style.display = "flex";
+    desktop.style.display = "none";
   }
 }
 

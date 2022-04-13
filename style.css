@@ -899,12 +899,12 @@ footer p {
   }
 
   .desktoppop-exit {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: initial;
-    margin-right: 14px;
-    margin-left: auto;
-    margin-bottom: 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .desktop-popcontainer {
+    display: none;
   }
 }
