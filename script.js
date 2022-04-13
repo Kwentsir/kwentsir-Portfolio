@@ -159,12 +159,12 @@ function popUp() {
   const mq = window.matchMedia("(min-width: 67.5rem)");
   if (mq.matches) {
     // window width is at  1080 px or more
-     const desktop = document.querySelector(".desktop-popcontainer");
-     desktop.style.display = "flex";
+    const desktop = document.querySelector(".desktop-popcontainer");
+    desktop.style.display = "flex";
   } else {
     // window width is less than 1080px
-       const mobile = document.querySelector(".mobile-popcontainer");
-       mobile.style.display = "flex";
+    const mobile = document.querySelector(".mobile-popcontainer");
+    mobile.style.display = "flex";
   }
 }
 
@@ -174,6 +174,16 @@ function getButtons() {
   projectspopup.forEach((e) => e.addEventListener("click", popUp));
 }
 
+const closeMobilePopup = document.querySelector(".desktop-popcontainer");
+const closeDesktopPopup = document.querySelector(".mobile-popcontainer");
+
+function closeButton() {
+  closeMobilePopup.style.display = "none";
+  closeDesktopPopup.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+closeDesktopPopup.addEventListener("click", closeButton);
+closeDesktopPopup.addEventListener("click", closeButton);
 
 window.onload = () => {
   myWorkSection();
