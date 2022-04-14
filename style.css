@@ -238,19 +238,21 @@ hr {
 
 .desktop-popbutton {
   display: flex;
-  column-gap: 12px;
+  row-gap: 12px;
+  margin: 5px;
   margin-top: 16px;
 }
 
 
 
-.popup-button {
+.mpopup-button {
+  color: white;
   padding: 0;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 5px; */
+  padding: 10px 5px; 
   background: #36b37f;
   border-radius: 4px;
 }
@@ -482,9 +484,8 @@ position: relative;
   border-radius: 16px;
   margin: auto;
   width: 70%;
-  height: auto;
   padding: 40px 20px;
-  margin-bottom: 20px;
+
 }
 
 .desktop-popimg {
@@ -500,6 +501,7 @@ position: relative;
   margin-top: 12px;
   margin-bottom: 12px !important;
   line-height: 44px;
+  max-width: 60%;
 }
 
 .desktop-poplanguages {
@@ -554,12 +556,21 @@ footer p {
   text-align: center;
 }
 
-.popup-button p {
+.dpopup-button p {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  background: #36b37f;
+  border-radius: 8px;
   color: white;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 20px auto;
   cursor: pointer;
+  padding: 20px 12px;
 }
 
 .contact-form {

@@ -58,7 +58,7 @@ const dynamicProjects = [
     longDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.svg",
-    mobiePopupImage: "./images/SnapshotPopUpMobile.svg",
+    mobilePopupImage: "./images/SnapshotPopUpMobile.svg",
     liveSource: "",
     seeSource: "",
   },
@@ -77,7 +77,7 @@ const dynamicProjects = [
     longDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.svg",
-    mobiePopupImage: "./images/SnapshotPopUpMobile.svg",
+    mobilePopupImage: "./images/SnapshotPopUpMobile.svg",
     liveSource: "",
     seeSource: "",
   },
@@ -96,7 +96,7 @@ const dynamicProjects = [
     longDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.svg",
-    mobiePopupImage: "./images/SnapshotPopUpMobile.svg",
+    mobilePopupImage: "./images/SnapshotPopUpMobile.svg",
     liveSource: "",
     seeSource: "",
   },
@@ -115,7 +115,7 @@ const dynamicProjects = [
     longDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.svg",
-    mobiePopupImage: "./images/SnapshotPopUpMobile.svg",
+    mobilePopupImage: "./images/SnapshotPopUpMobile.svg",
     liveSource: "",
     seeSource: "",
   },
@@ -151,7 +151,6 @@ function myWorkSection() {
     )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
     getElement(".recent-work").appendChild(workSection.content.firstChild);
   }
-
 }
 
 let projectspopup;
@@ -177,7 +176,7 @@ function popUp() {
       <h3 class="desktop-popheadline">
       ${dynamicProjects[0].shortDescription}
       </h3>
-      <div class="popup-button">
+      <div class="dpopup-button">
           <p>
             See Live
             <span>
@@ -192,14 +191,12 @@ function popUp() {
           </p>
         </div>
       </div>
-    </div>
     <ul class="desktop-poplanguages">
     <li>${dynamicProjects[0].desktopTechnologiesPopup[0]}</li>
     <li>${dynamicProjects[0].desktopTechnologiesPopup[1]}</li>
     <li>${dynamicProjects[0].desktopTechnologiesPopup[2]}</li>
     <li>${dynamicProjects[0].desktopTechnologiesPopup[3]}</li>
     <li>${dynamicProjects[0].desktopTechnologiesPopup[4]}</li>
-    <li>${dynamicProjects[0].desktopTechnologiesPopup[5]}</li>
     </ul>
     <p class="desktop-popparagraph">
     ${dynamicProjects[0].longDescription}
@@ -207,18 +204,18 @@ function popUp() {
   </div>
     `;
 
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     desktop.style.display = "flex";
   } else {
     // window width is less than 1080px
     const mobile = document.querySelector(".mobile-popcontainer");
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     mobile.style.display = "flex";
     mobile.innerHTML = `
     <div class="mobile-popclass" id="mobile-popid">
     <div class="pop-imagesbtn">
       <span class="mobpop-exit exit-button"
-        ><img src="${dynamicProjects[0].mobiePopupImage}" alt="Close Menu"
+        ><img src="${dynamicProjects[0].mobilePopupImage}" alt="Close Menu"
       /></span>
       <img
         class="mobile-popimg"
@@ -239,11 +236,11 @@ function popUp() {
       ${dynamicProjects[0].longDescription}
       </p>
     <div class="mobile-popbutton">
-      <div class="popup-button">
+      <div class="mpopup-button">
         <p>See Live</p>
         <img src="./images/see-live-icon.svg" alt="See Live Icon" />
       </div>
-      <div class="popup-button">
+      <div class="mpopup-button">
         <p>See Source</p>
         <img src="./images/githubwhite.svg" alt="Github Icon" />
       </div>
@@ -275,7 +272,6 @@ window.addEventListener("click", (e) => {
     closeButton();
   }
 });
-
 
 window.onload = () => {
   myWorkSection();
