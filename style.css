@@ -242,11 +242,7 @@ hr {
   margin-top: 16px;
 }
 
-.see-button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between !important;
-}
+
 
 .popup-button {
   display: flex;
