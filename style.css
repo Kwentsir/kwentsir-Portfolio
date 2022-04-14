@@ -484,8 +484,9 @@ position: relative;
   border-radius: 16px;
   margin: auto;
   width: 70%;
-  height: 80%;
+  height: auto;
   padding: 40px 20px;
+  margin-bottom: 20px;
 }
 
 .desktop-popimg {
@@ -833,6 +834,7 @@ footer p {
   }
 
   .desktop-popcontainer {
+    padding-top:30%;
     background-color: transparent;
     background-color: hsla(216, 14%, 79%, 0.693);
     backdrop-filter: blur(4px);
