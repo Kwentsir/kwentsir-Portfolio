@@ -243,16 +243,13 @@ hr {
   margin-top: 16px;
 }
 
-
-
 .mpopup-button {
   color: white;
-  padding: 0;
+  padding: 10px;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5px; 
   background: #36b37f;
   border-radius: 4px;
 }
@@ -437,8 +434,8 @@ hr {
 }
 
 .desktop-popimages {
-display: flex !important;
-position: relative;
+  display: flex !important;
+  position: relative;
 }
 
 .mobile-popclass {
@@ -447,6 +444,7 @@ position: relative;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 10px;
+  margin-top: 200px;
 }
 
 .mobile-popimg {
@@ -485,7 +483,6 @@ position: relative;
   margin: auto;
   width: 70%;
   padding: 40px 20px;
-
 }
 
 .desktop-popimg {
@@ -568,7 +565,6 @@ footer p {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  margin: 20px auto;
   cursor: pointer;
   padding: 20px 12px;
 }
@@ -843,7 +839,9 @@ footer p {
   }
 
   .desktop-popcontainer {
-    padding-top:30%;
+    display: none;
+    overflow: auto;
+    padding-top: 30%;
     background-color: transparent;
     background-color: hsla(216, 14%, 79%, 0.693);
     backdrop-filter: blur(4px);
@@ -853,7 +851,6 @@ footer p {
     top: 0;
     left: 0;
     z-index: 600;
-    display: none;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -928,11 +925,5 @@ footer p {
     right: 0;
     top: 0;
     cursor: pointer;
-  }
-
-  .desktop-popcontainer {
-    display: none;
-    width: 100%;
-    overflow: auto;
   }
 }
