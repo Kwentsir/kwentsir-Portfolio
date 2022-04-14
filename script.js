@@ -165,6 +165,7 @@ function popUp() {
   } else {
     // window width is less than 1080px
     const mobile = document.querySelector(".mobile-popcontainer");
+    document.body.style.overflow = 'hidden';
     mobile.style.display = "flex";
   }
 }
