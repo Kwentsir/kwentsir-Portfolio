@@ -160,6 +160,7 @@ function popUp() {
   if (mq.matches) {
     // window width is at  1080 px or more
     const desktop = document.querySelector(".desktop-popcontainer");
+    document.body.style.overflow = 'hidden';
     desktop.style.display = "flex";
   } else {
     // window width is less than 1080px
