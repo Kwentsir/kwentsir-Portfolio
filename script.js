@@ -15,6 +15,10 @@ function menuToggler() {
     closeNav.style.display = "block";
     navMenu.style.display = "block";
     document.body.style.overflow = "hidden";
+    navMenu.classList.add('displayMenu');
+    humburger.style.display = 'none';
+    closeNav.style.display = 'flex';
+    navMenu.style.display = 'block';
   }
 }
 humburger.addEventListener("click", menuToggler);
