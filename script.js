@@ -176,14 +176,20 @@ function getButtons() {
 
 const closeMobilePopup = document.querySelector(".desktop-popcontainer");
 const closeDesktopPopup = document.querySelector(".mobile-popcontainer");
+const closeMobPopup = document.querySelectorAll(".exit-button");
 
 function closeButton() {
   closeMobilePopup.style.display = "none";
   closeDesktopPopup.style.display = "none";
-  document.body.style.overflow = "auto";
+  document.body.style.overflow = "hidden";
 }
-closeDesktopPopup.addEventListener("click", closeButton);
-closeDesktopPopup.addEventListener("click", closeButton);
+
+closeMobPopup.forEach((a) => a.addEventListener("click", closeButton));
+window.addEventListener("click", (e) => {
+  if (e.target === closeDesktopPopup || e.target === closeMobilePopup) {
+    closeButton();
+  }
+});
 
 window.onload = () => {
   myWorkSection();

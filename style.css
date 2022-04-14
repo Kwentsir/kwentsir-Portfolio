@@ -482,8 +482,10 @@ position: relative;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 78px 24px;
-  margin: 200px;
+  margin: auto;
+  width: 70%;
+  height: 80%;
+  padding: 40px 20px;
 }
 
 .desktop-popimg {
@@ -920,5 +922,6 @@ footer p {
   .desktop-popcontainer {
     display: none;
     width: 100%;
+    overflow: auto;
   }
 }
