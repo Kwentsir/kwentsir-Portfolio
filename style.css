@@ -245,11 +245,12 @@ hr {
 
 
 .popup-button {
+  padding: 0;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5px;
+  /* padding: 10px 5px; */
   background: #36b37f;
   border-radius: 4px;
 }
@@ -556,7 +557,7 @@ footer p {
 .popup-button p {
   color: white;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 24px;
   cursor: pointer;
 }

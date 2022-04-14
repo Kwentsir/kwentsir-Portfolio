@@ -38,7 +38,7 @@ const dynamicProjects = [
     shortDescription: "Keeping track of hundreds of components",
     longDescription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    desktopPopupImage: ".images/SnapshootPopUpDesktop.svg",
+    desktopPopupImage: "./images/SnapshootPopUpDesktop.svg",
     mobilePopupImage: "./images/SnapshotPopUpMobile.svg",
     liveSource: "",
     seeSource: "",
@@ -151,6 +151,7 @@ function myWorkSection() {
     )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
     getElement(".recent-work").appendChild(workSection.content.firstChild);
   }
+
 }
 
 let projectspopup;
@@ -160,6 +161,52 @@ function popUp() {
   if (mq.matches) {
     // window width is at  1080 px or more
     const desktop = document.querySelector(".desktop-popcontainer");
+    desktop.innerHTML = `
+    <div class="desktop-popclass" id="desktop-popid">
+    <div class="desktop-popimages">
+      <span class="desktoppop-exit exit-button"
+        ><img src="images/close.png" alt="Close Menu"
+      /></span>
+      <img
+        class="desktop-popimg"
+        src="${dynamicProjects[0].desktopPopupImage}"
+        alt="Pop up Snapshot"
+      />
+    </div>
+    <div class="desktop-popbutton">
+      <h3 class="desktop-popheadline">
+      ${dynamicProjects[0].shortDescription}
+      </h3>
+      <div class="popup-button">
+          <p>
+            See Live
+            <span>
+              <img src="./images/see-live-icon.svg" alt="See Live Icon"
+            /></span>
+          </p>     
+          <p>
+            See Source
+            <span
+              ><img src="./images/githubwhite.svg" alt="Github Icon"
+            /></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <ul class="desktop-poplanguages">
+    <li>${dynamicProjects[0].desktopTechnologiesPopup[0]}</li>
+    <li>${dynamicProjects[0].desktopTechnologiesPopup[1]}</li>
+    <li>${dynamicProjects[0].desktopTechnologiesPopup[2]}</li>
+    <li>${dynamicProjects[0].desktopTechnologiesPopup[3]}</li>
+    <li>${dynamicProjects[0].desktopTechnologiesPopup[4]}</li>
+    <li>${dynamicProjects[0].desktopTechnologiesPopup[5]}</li>
+    </ul>
+    <p class="desktop-popparagraph">
+    ${dynamicProjects[0].longDescription}
+    </p>
+  </div>
+    `;
+
     document.body.style.overflow = 'hidden';
     desktop.style.display = "flex";
   } else {
@@ -167,6 +214,42 @@ function popUp() {
     const mobile = document.querySelector(".mobile-popcontainer");
     document.body.style.overflow = 'hidden';
     mobile.style.display = "flex";
+    mobile.innerHTML = `
+    <div class="mobile-popclass" id="mobile-popid">
+    <div class="pop-imagesbtn">
+      <span class="mobpop-exit exit-button"
+        ><img src="${dynamicProjects[0].mobiePopupImage}" alt="Close Menu"
+      /></span>
+      <img
+        class="mobile-popimg"
+        src="./images/SnaptshotPopUpMobile.png"
+        alt="Pop up Snapshot"
+      />
+    </div>
+    <h3 class="mobile-popheadline">
+      ${dynamicProjects[0].shortDescription}
+    </h3>
+    <ul class="mobile-poplanguages">
+      <li>${dynamicProjects[0].mobileTechnologiesPopup[0]}</li>
+      <li>${dynamicProjects[0].mobileTechnologiesPopup[1]}</li>
+      <li>${dynamicProjects[0].mobileTechnologiesPopup[2]}</li>
+    
+    </ul>
+      <p class="mobile-popparagraph"> 
+      ${dynamicProjects[0].longDescription}
+      </p>
+    <div class="mobile-popbutton">
+      <div class="popup-button">
+        <p>See Live</p>
+        <img src="./images/see-live-icon.svg" alt="See Live Icon" />
+      </div>
+      <div class="popup-button">
+        <p>See Source</p>
+        <img src="./images/githubwhite.svg" alt="Github Icon" />
+      </div>
+    </div>
+  </div>
+    `;
   }
 }
 
@@ -192,6 +275,7 @@ window.addEventListener("click", (e) => {
     closeButton();
   }
 });
+
 
 window.onload = () => {
   myWorkSection();
