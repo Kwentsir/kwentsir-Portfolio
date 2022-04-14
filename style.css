@@ -241,16 +241,18 @@ hr {
 
 .desktop-popbutton {
   display: flex;
-  column-gap: 12px;
+  row-gap: 12px;
+  margin: 5px;
   margin-top: 16px;
 }
 
-.popup-button {
+.mpopup-button {
+  color: white;
+  padding: 10px;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5px;
   background: #36b37f;
   border-radius: 4px;
 }
@@ -414,12 +416,13 @@ hr {
 
 .mobile-popcontainer {
   display: none;
+  overflow: auto !important;
   background-color: transparent;
   background-color: hsla(216, 14%, 79%, 0.693);
   backdrop-filter: blur(4px);
   position: fixed;
-  height: 100%;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 5;
@@ -433,12 +436,18 @@ hr {
   display: none;
 }
 
+.desktop-popimages {
+  display: flex !important;
+  position: relative;
+}
+
 .mobile-popclass {
   display: block;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 10px;
+  margin-top: 200px;
 }
 
 .mobile-popimg {
@@ -474,12 +483,14 @@ hr {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 78px 24px;
-  margin: 200px;
+  margin: auto;
+  width: 70%;
+  padding: 40px 20px;
 }
 
 .desktop-popimg {
   width: 100%;
+  margin-top: 50px;
 }
 
 .desktop-popheadline {
@@ -490,6 +501,7 @@ hr {
   margin-top: 12px;
   margin-bottom: 12px !important;
   line-height: 44px;
+  max-width: 60%;
 }
 
 .desktop-poplanguages {
@@ -544,12 +556,20 @@ footer p {
   text-align: center;
 }
 
-.popup-button p {
+.dpopup-button p {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  background: #36b37f;
+  border-radius: 8px;
   color: white;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
   cursor: pointer;
+  padding: 20px 12px;
 }
 
 .contact-form {
@@ -643,6 +663,18 @@ footer p {
   right: 5%;
   color: white;
   cursor: pointer;
+}
+
+.error-message {
+  background-color: red;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  display: none;
+  max-width: 90%;
+  margin-left: 25px;
 }
 
 @media only screen and (min-width: 67.5rem) {
@@ -822,6 +854,9 @@ footer p {
   }
 
   .desktop-popcontainer {
+    display: none;
+    overflow: auto;
+    padding-top: 30%;
     background-color: transparent;
     background-color: hsla(216, 14%, 79%, 0.693);
     backdrop-filter: blur(4px);
@@ -831,7 +866,6 @@ footer p {
     top: 0;
     left: 0;
     z-index: 600;
-    display: none;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -902,12 +936,9 @@ footer p {
   }
 
   .desktoppop-exit {
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: initial;
-    margin-right: 14px;
-    margin-left: auto;
-    margin-bottom: 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
   }
 }
