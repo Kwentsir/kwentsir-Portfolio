@@ -52,6 +52,9 @@
             <li class="nav-items">
               <a href="#contactme" class="desktop-menu"> Contact </a>
             </li>
+              <li class="nav-items"><a href="#recent-work" class="mobile-menu"> Portfolio </a></li>
+              <li class="nav-items"><a href="#aboutme" class="mobile-menu"> About </a></li>
+              <li class="nav-items"><a href="#contactme" class="mobile-menu"> Contact </a></li>
           </ul>
           <ul class="desktop">
             <li class="nav-items">
@@ -200,9 +203,10 @@
                 name="email"
                 class="text"
                 placeholder="Email address"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
               />
+                  <span class="error-message"></span>
               <textarea
                 name="message"
                 class="areatext"
@@ -211,7 +215,7 @@
                 required
               ></textarea>
               <button type="submit" class="get-resume" id="get-in-touch">
-                Get In Touch
+                Get In Touch 
               </button>
             </form>
           </div>

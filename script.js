@@ -275,12 +275,25 @@ window.addEventListener('click', (e) => {
   }
 });
 
+const form = document.querySelector('.contact-form');
+const span = document.querySelector('.error-message');
+
+function hasUpperCase(input) {
+  return input.toLowerCase() !== input;
+}
+form.addEventListener('submit', (event) => {
+  if (hasUpperCase(form.elements.email.value)) {
+    event.preventDefault();
+    span.style.display = 'block';
+    span.innerHTML = 'The email field only accepts lowercase letters';
+  }
+});
+
 window.onload = () => {
   myWorkSection();
   getButtons();
 };
 
-const form = document.querySelector('.contact-form');
 let formData = {
   name: '',
   email: '',
