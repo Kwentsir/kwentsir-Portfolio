@@ -293,26 +293,37 @@ window.onload = () => {
   myWorkSection();
   getButtons();
 };
-
-let formData = {
-  name: '',
-  email: '',
-  message: '',
-};
-const fetchLocalData = () => {
-  if (localStorage.getItem('formData') !== null) {
-    formData = JSON.parse(localStorage.getItem('formData'));
+const getFormData = () => {
+  let setData = localStorage.getItem('formData')
+  const formData = JSON.parse(setData);
+  if (formData) {
+    document.getElementById('email').value = formData.email;
+    document.getElementById('name').value = formData.name;
+    document.getElementById('form-Description').value = formData.message;
   }
-  form.elements.name.value = formData.name;
-  form.elements.email.value = formData.email;
-  form.elements.message.value = formData.message;
-};
+}
 
-fetchLocalData();
-document.querySelector('#get-in-touch').addEventListener('click', () => {
-  formData.name = form.elements.name.value;
-  formData.email = form.elements.email.value;
-  formData.message = form.elements.message.value;
-
+const formDescription = document.getElementById('form-Description');
+formDescription.addEventListener('change', (e) => {
+  let formData = JSON.parse(localStorage.getItem('formData'));
+  if (!formData) {
+    formData = { name: '', email: '', message: '' };
+  }
+  formData.message = e.target.value;
   localStorage.setItem('formData', JSON.stringify(formData));
 });
+
+const formInputs = document.querySelectorAll('input');
+formInputs.forEach((items) => {
+  items.addEventListener('change', (e) => {
+    let setText = localStorage.getItem('formData');
+    let formData = JSON.parse(setText);
+    if (!formData) {
+      formData = { name: '', email: '', message: '' };
+    }
+    formData[e.target.name] = e.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
+
+getFormData();
