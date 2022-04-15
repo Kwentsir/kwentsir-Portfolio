@@ -287,6 +287,11 @@ form.addEventListener("submit", (event) => {
   }
 });
 
+let formData = {
+  name: "",
+  email: "",
+  message: "",
+};
 const fetchLocalData = () => {
   if (localStorage.getItem("formData") !== null) {
     formData = JSON.parse(localStorage.getItem("formData"));
