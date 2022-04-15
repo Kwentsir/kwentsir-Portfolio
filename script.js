@@ -266,9 +266,12 @@ function closeButton() {
   document.body.style.overflow = "hidden";
 }
 
-closeMobPopup.forEach((a) => a.addEventListener("click", closeButton));
 window.addEventListener("click", (e) => {
-  if (e.target === closeDesktopPopup || e.target === closeMobilePopup) {
+  if (
+    e.target === closeDesktopPopup ||
+    e.target === closeMobilePopup ||
+    e.target.parentNode.classList.contains("exit-button")
+  ) {
     closeButton();
   }
 });
