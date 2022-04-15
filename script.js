@@ -260,21 +260,6 @@ const closeMobilePopup = document.querySelector(".desktop-popcontainer");
 const closeDesktopPopup = document.querySelector(".mobile-popcontainer");
 const closeMobPopup = document.querySelectorAll(".exit-button");
 
-function closeButton() {
-  closeMobilePopup.style.display = "none";
-  closeDesktopPopup.style.display = "none";
-  document.body.style.overflow = "hidden";
-}
-
-window.addEventListener("click", (e) => {
-  if (
-    e.target === closeDesktopPopup ||
-    e.target === closeMobilePopup ||
-    e.target.parentNode.classList.contains("exit-button")
-  ) {
-    closeButton();
-  }
-});
 
 window.onload = () => {
   myWorkSection();
