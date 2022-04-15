@@ -147,8 +147,8 @@ function myWorkSection() {
     <img src="./images/Imgplaholder.svg" alt="Image placeholder"> <h2 class="recent-work__items">
     ${allProjects.name}
     </h2> <ul class="recent-work__items-languages">${technologyList(
-    technologies,
-  )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
+      technologies,
+    )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
     getElement('.recent-work').appendChild(workSection.content.firstChild);
   }
 }
@@ -307,3 +307,12 @@ const fetchLocalData = () => {
   form.elements.email.value = formData.email;
   form.elements.message.value = formData.message;
 };
+
+fetchLocalData();
+document.querySelector('#get-in-touch').addEventListener('click', () => {
+  formData.name = form.elements.name.value;
+  formData.email = form.elements.email.value;
+  formData.message = form.elements.message.value;
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
