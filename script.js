@@ -147,8 +147,8 @@ function myWorkSection() {
     <img src="./images/Imgplaholder.svg" alt="Image placeholder"> <h2 class="recent-work__items">
     ${allProjects.name}
     </h2> <ul class="recent-work__items-languages">${technologyList(
-      technologies,
-    )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
+    technologies,
+  )}</ul> <button type="button" class="see-projects open-modal" id="see-project">See Projects</button> </article>`;
     getElement('.recent-work').appendChild(workSection.content.firstChild);
   }
 }
@@ -294,14 +294,14 @@ window.onload = () => {
   getButtons();
 };
 const getFormData = () => {
-  let setData = localStorage.getItem('formData')
+  const setData = localStorage.getItem('formData');
   const formData = JSON.parse(setData);
   if (formData) {
     document.getElementById('email').value = formData.email;
     document.getElementById('name').value = formData.name;
     document.getElementById('form-Description').value = formData.message;
   }
-}
+};
 
 const formDescription = document.getElementById('form-Description');
 formDescription.addEventListener('change', (e) => {
@@ -316,7 +316,7 @@ formDescription.addEventListener('change', (e) => {
 const formInputs = document.querySelectorAll('input');
 formInputs.forEach((items) => {
   items.addEventListener('change', (e) => {
-    let setText = localStorage.getItem('formData');
+    const setText = localStorage.getItem('formData');
     let formData = JSON.parse(setText);
     if (!formData) {
       formData = { name: '', email: '', message: '' };
