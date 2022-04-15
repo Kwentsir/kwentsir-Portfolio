@@ -437,8 +437,9 @@ hr {
 }
 
 .desktop-popimages {
-  display: flex !important;
-  position: relative;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
 }
 
 .mobile-popclass {
@@ -483,14 +484,19 @@ hr {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin: auto;
-  width: 70%;
+  width: 80%;
   padding: 40px 20px;
+  margin-left: 120px;
+  margin-bottom: 100px;
+  margin-top: 50px
 }
 
 .desktop-popimg {
+  position: relative;
+  height: 600px;
   width: 100%;
-  margin-top: 50px;
+  object-fit: contain;
+
 }
 
 .desktop-popheadline {
@@ -856,20 +862,14 @@ footer p {
   .desktop-popcontainer {
     display: none;
     overflow: auto;
-    padding-top: 30%;
     background-color: transparent;
     background-color: hsla(216, 14%, 79%, 0.693);
     backdrop-filter: blur(4px);
     position: fixed;
-    height: 100%;
     width: 100%;
     top: 0;
-    left: 0;
     z-index: 600;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin: ;
   }
 
   .footer-social {

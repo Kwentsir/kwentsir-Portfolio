@@ -163,15 +163,15 @@ function popUp() {
     desktop.innerHTML = `
     <div class="desktop-popclass" id="desktop-popid">
     <div class="desktop-popimages">
-      <span class="desktoppop-exit exit-button"
-        ><img src="images/close.png" alt="Close Menu"
-      /></span>
-      <img
+     <img
         class="desktop-popimg"
         src="${dynamicProjects[0].desktopPopupImage}"
         alt="Pop up Snapshot"
       />
     </div>
+      <span class="desktoppop-exit exit-button"
+        ><img src="images/close.png" alt="Close Menu"
+      /></span>
     <div class="desktop-popbutton">
       <h3 class="desktop-popheadline">
       ${dynamicProjects[0].shortDescription}
