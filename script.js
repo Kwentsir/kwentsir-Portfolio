@@ -294,11 +294,3 @@ const fetchLocalData = () => {
   form.elements.email.value = formData.email;
   form.elements.message.value = formData.message;
 };
-fetchLocalData();
-document.querySelector('#get-in-touch').addEventListener('click', () => {
-  formData.name = form.elements.name.value;
-  formData.email = form.elements.email.value;
-  formData.message = form.elements.message.value;
-
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
