@@ -438,7 +438,7 @@ hr {
 
 .desktop-popimages {
   position: relative;
-max-width: 100%;
+  max-width: 100%;
 }
 
 .mobile-popclass {
@@ -858,7 +858,6 @@ footer p {
 
   .desktop-popcontainer {
     display: none;
-    overflow: auto;
     background-color: transparent;
     background-color: hsla(216, 14%, 79%, 0.693);
     backdrop-filter: blur(4px);
@@ -868,9 +867,9 @@ footer p {
     top: 0;
     left: 0;
     z-index: 600;
-      overflow: scroll;
-      border: 1px solid #dfe1e6;
-      padding: 16px;
+    overflow: scroll;
+    border: 1px solid #dfe1e6;
+    padding: 16px;
   }
 
   .footer-social {
