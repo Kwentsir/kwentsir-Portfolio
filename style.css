@@ -452,6 +452,7 @@ hr {
 
 .mobile-popimg {
   width: 100%;
+  padding: 40px;
 }
 
 .mobile-popheadline {
@@ -492,6 +493,7 @@ hr {
 .desktop-popimg {
   display: inline-block;
   width: 100%;
+  padding: 40px;
 }
 
 .desktop-popheadline {

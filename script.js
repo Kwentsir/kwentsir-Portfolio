@@ -41,17 +41,17 @@ const dynamicProjects = [
       "CSS",
       "PostgreSQL",
     ],
-    shortDescription: "Keeping track of hundreds of components",
+    shortDescription: "A mobile web application to manage your budget.",
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    desktopPopupImage: "./images/SnapshootPopUpDesktop.png",
-    mobilePopupImage: "./images/SnaptshotPopUpMobile.png",
-    liveSource: "",
-    seeSource: "",
+      "This application allows users to add or remove transactions, and see their balance. It was built with Ruby on Rails and PostgreSQL.",
+    desktopPopupImage: "./images/quick_budget.PNG",
+    mobilePopupImage: "./images/quickbudget.png",
+    liveSource: "https://quick-budget-app.herokuapp.com/users/sign_in",
+    seeSource: "https://github.com/Kwentsir/Quick-Budget-App",
   },
   {
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "JavaScript", "html"],
+    name: "FOOD RECIPE APP",
+    technologies: ["Ruby on rails", "JavaScript", "PostgreSQL", "HTML", "CSS"],
     desktopTechnologiesPopup: [
       "Codekit",
       "Github",
@@ -59,18 +59,24 @@ const dynamicProjects = [
       "Terminal",
       "Codepen",
     ],
-    mobileTechnologiesPopup: ["Ruby on rails", "CSS", "JavaScript"],
-    shortDescription: "Keeping track of hundreds of components",
+    mobileTechnologiesPopup: [
+      "Ruby on rails",
+      "JavaScript",
+      "PostgreSQL",
+      "HTML",
+      "CSS",
+    ],
+    shortDescription: "Keeping track of hundreds of recipes.",
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "Your entire recipe collection, inventories, and ingredients are all tracked by the Food Recipe App. You can create recipes, record ingredients, keep track of what you have, build shopping lists based on what you have and what a recipe calls for, and save ingredients.",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.png",
     mobilePopupImage: "./images/SnaptshotPopUpMobile.png",
     liveSource: "",
     seeSource: "",
   },
   {
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "JavaScript", "html"],
+    name: "Ghana Tech Conference Website",
+    technologies: ["HTML", "JavaScript", "CSS"],
     desktopTechnologiesPopup: [
       "Codekit",
       "Github",
@@ -78,18 +84,19 @@ const dynamicProjects = [
       "Terminal",
       "Codepen",
     ],
-    mobileTechnologiesPopup: ["Ruby on rails", "CSS", "JavaScript"],
-    shortDescription: "Keeping track of hundreds of components",
+    mobileTechnologiesPopup: ["HTML", "JavaScript", "CSS"],
+    shortDescription:
+      "This project is a website designed for an upcoming Ghana Tech Conference",
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "It is with great pleasure that we invite you to attend the 4th Annual Ghana Tech Summit. Ghana Tech Summit brings together hundreds of entrepreneurs, investors, digital marketers and creatives under one roof together to address humanity’s greatest challenges via technology and entrepreneurship.",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.png",
     mobilePopupImage: "./images/SnaptshotPopUpMobile.png",
     liveSource: "",
     seeSource: "",
   },
   {
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "JavaScript", "html"],
+    name: "Homeless Box Office",
+    technologies: ["HTML", "JavaScript", "CSS"],
     desktopTechnologiesPopup: [
       "Codekit",
       "Github",
@@ -97,18 +104,19 @@ const dynamicProjects = [
       "Terminal",
       "Codepen",
     ],
-    mobileTechnologiesPopup: ["Ruby on rails", "CSS", "JavaScript"],
-    shortDescription: "Keeping track of hundreds of components",
+    mobileTechnologiesPopup: ["HTML", "JavaScript", "CSS"],
+    shortDescription:
+      "Homeless Box Office (HBO) is a website which you can see TV series and movies, their ratings, likes and reviews.",
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "Homeless Box Office (HBO) is a website which you can see TV series and movies, their ratings, likes and reviews. Also you can make reservation and see the reservations",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.png",
     mobilePopupImage: "./images/SnaptshotPopUpMobile.png",
     liveSource: "",
     seeSource: "",
   },
   {
-    name: "Multi-Post Stories Gain+Glory",
-    technologies: ["Ruby on rails", "JavaScript", "html"],
+    name: "Math Magicians",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
     desktopTechnologiesPopup: [
       "Codekit",
       "Github",
@@ -116,10 +124,30 @@ const dynamicProjects = [
       "Terminal",
       "Codepen",
     ],
-    mobileTechnologiesPopup: ["Ruby on rails", "CSS", "JavaScript"],
-    shortDescription: "Keeping track of hundreds of components",
+    mobileTechnologiesPopup: ["React", "JavaScript", "HTML", "CSS"],
+    shortDescription: "Made for Math Lovers",
     longDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "This is a simple basic calculator with memory functions similar to a small handheld calculator. Use this basic calculator online for math with addition, subtraction, division and multiplication.",
+    desktopPopupImage: ".images/SnapshootPopUpDesktop.png",
+    mobilePopupImage: "./images/SnaptshotPopUpMobile.png",
+    liveSource: "",
+    seeSource: "",
+  },
+  {
+    name: "Covid-19 Tracker",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    desktopTechnologiesPopup: [
+      "Codekit",
+      "Github",
+      "JavaScript",
+      "Terminal",
+      "Codepen",
+    ],
+    mobileTechnologiesPopup: ["React", "JavaScript", "HTML", "CSS"],
+    shortDescription:
+      "This is a web app that display metric data from an API for covid-19 cases in different countries.",
+    longDescription:
+      "This is a web app that display metric data from an API for covid-19 cases in different countries. Built with JavaScript, HTML, CSS, REACT, REDUX, and API.",
     desktopPopupImage: ".images/SnapshootPopUpDesktop.png",
     mobilePopupImage: "./images/SnaptshotPopUpMobile.png",
     liveSource: "",
@@ -159,14 +187,15 @@ function myWorkSection() {
   }
 }
 
-let projectspopup;
+let projectsPopup = [];
 
 function popUp() {
   const mq = window.matchMedia('(min-width: 67.5rem)');
+  for (let i = 0; i < dynamicProjects.length; i += 1) {
   if (mq.matches) {
     // window width is at  1080 px or more
-    const desktop = document.querySelector('.desktop-popcontainer');
-    desktop.innerHTML = `
+    const desktopVersion = document.querySelector('.desktop-popcontainer');
+    desktopVersion.innerHTML = `
     <div class="desktop-popclass" id="desktop-popid">
     <div class="desktop-popimages">
      <span class="desktoppop-exit exit-button"
@@ -174,14 +203,14 @@ function popUp() {
       /></span>
      <img
         class="desktop-popimg"
-        src="${dynamicProjects[0].desktopPopupImage}"
+        src="${dynamicProjects.desktopPopupImage}"
         alt="Pop up Snapshot"
       />
     </div>
      
     <div class="desktop-popbutton">
       <h3 class="desktop-popheadline">
-      ${dynamicProjects[0].shortDescription}
+      ${dynamicProjects.shortDescription}
       </h3>
       <div class="dpopup-button">
           <p>
@@ -206,7 +235,7 @@ function popUp() {
     <li>${dynamicProjects[0].desktopTechnologiesPopup[4]}</li>
     </ul>
     <p class="desktop-popparagraph">
-    ${dynamicProjects[0].longDescription}
+    ${dynamicProjects.longDescription}
     </p>
   </div>
     `;
@@ -226,12 +255,12 @@ function popUp() {
       /></span>
       <img
         class="mobile-popimg"
-        src="${dynamicProjects[0].mobilePopupImage}"
+        src="${dynamicProjects.mobilePopupImage}"
         alt="Pop up Snapshot"
       />
     </div>
     <h3 class="mobile-popheadline">
-      ${dynamicProjects[0].shortDescription}
+      ${dynamicProjects.shortDescription}
     </h3>
     <ul class="mobile-poplanguages">
       <li>${dynamicProjects[0].mobileTechnologiesPopup[0]}</li>
@@ -240,7 +269,7 @@ function popUp() {
     
     </ul>
       <p class="mobile-popparagraph"> 
-      ${dynamicProjects[0].longDescription}
+      ${dynamicProjects.longDescription}
       </p>
     <div class="mobile-popbutton">
       <div class="mpopup-button">
@@ -256,11 +285,12 @@ function popUp() {
     `;
   }
 }
+}
 
 function getButtons() {
-  projectspopup = document.getElementsByClassName('open-modal');
-  projectspopup = Array.from(projectspopup);
-  projectspopup.forEach((e) => e.addEventListener('click', popUp));
+  projectsPopup = document.getElementsByClassName('open-modal');
+  projectsPopup = Array.from(projectsPopup);
+  projectsPopup.forEach((e) => e.addEventListener('click', popUp));
 }
 
 const closeMobilePopup = document.querySelector('.desktop-popcontainer');
